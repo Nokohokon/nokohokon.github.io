@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <div class="hamburger" id="hamburger">
+                <img src="images/open.svg" alt="Open Menu" id="openMenu">
+                <img src="images/close.svg" alt="Close Menu" id="closeMenu" class="hide">
+            </div>
+            <div class="nav__links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html#vorstellung">Vorstellung</a>
+                <a href="index.html#kundenbewertungen">Kundenbewertungen</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="support.html">Support</a>
+                <a href="https://discord.gg/THPR3BZc" target="_blank">Discord</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact animate__animated animate__fadeIn">
+            <h1>Kontakt</h1>
+            <div class="content">
+                <h2>Haben Sie Fragen?</h2>
+                <p>Zögern Sie nicht, uns zu kontaktieren. Unser freundliches Team steht Ihnen gerne für alle Fragen rund um unsere innovative Spülmaschine zur Verfügung.</p>
+                <form id="contactForm1">
+                    <div class="form-group">
+                        <label for="name1">Name:</label>
+                        <input type="text" id="name1" name="name1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="discord1">Discord:</label>
+                        <input type="text" id="discord1" name="discord1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message1">Nachricht:</label>
+                        <textarea id="message1" name="message1" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
+            </div>
+        </section>
+        <section class="reviews animate__animated animate__fadeInUp">
+            <h2>Kundenbewertungen</h2>
+            <div class="review-container" id="kundenbewertungen"></div>
+            <div class="review-form-container">
+                <h2>Bewertung abgeben</h2>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="rating">Bewertung (1-10):</label>
+                    <div class="rating-slider">
+                        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+                        <span id="ratingValue">5</span>
+                    </div>
+
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+
+                    <button type="submit">Bewertung absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Innovative Spülmaschine. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>

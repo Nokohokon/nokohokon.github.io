@@ -1,0 +1,314 @@
+/* Globale Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Stile für Header und Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo img {
+    height: 40px;
+}
+
+.nav .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav .hamburger img {
+    height: 30px;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav__links a:hover {
+    color: #e0e0e0;
+}
+
+.hide {
+    display: none;
+}
+
+/* Stile für Hauptinhalte */
+.intro, .features, .statistics, .reviews {
+    padding: 2rem;
+    text-align: center;
+}
+
+.feature-container, .stat-container, .review-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features ul {
+    list-style-type: none;
+}
+
+.features li {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.features li:hover {
+    transform: scale(1.05);
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.statistics .stat {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 800px;
+}
+
+.statistics .stat:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    width: 750px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progress {
+    background-color: turquoise;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.review-form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.review-form-container label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.review-form-container input[type="text"],
+.review-form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form-container button:hover {
+    background-color: #555;
+}
+
+.rating-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.rating-slider input[type="range"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    max-width: 300px;
+}
+
+.rating-slider #ratingValue {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Stile für Bewertungen */
+.review {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    border-radius: 10px 10px 0 0;
+}
+
+.review h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.review p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.review p:last-child {
+    font-style: italic;
+    color: #888;
+}
+
+.review .rating {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ff9966;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Stile für gedrehte Beschriftungen */
+div.vert {
+    height: 100px;
+    width: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.vert > span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 20px;
+    text-align: left;
+    transform: rotate(270deg) translate(-20px, 5px);
+    transform-origin: 0 0;
+}
+
+/* Stile für Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer-links {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Stile */
+@media (max-width: 768px) {
+    .nav__links {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        display: none;
+        z-index: 1;
+    }
+
+    .nav__links.show {
+        display: flex;
+    }
+
+    .nav .hamburger {
+        display: block;
+    }
+
+    .progress-bar {
+        width: 90%;
+        max-width: none;
+    }
+}

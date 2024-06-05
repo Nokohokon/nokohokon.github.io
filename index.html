@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Spülmaschine</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <div class="hamburger" id="hamburger">
+                <img src="images/open.svg" alt="Open Menu" id="openMenu">
+                <img src="images/close.svg" alt="Close Menu" id="closeMenu" class="hide">
+            </div>
+            <div class="nav__links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html#vorstellung">Vorstellung</a>
+                <a href="index.html#kundenbewertungen">Kundenbewertungen</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="support.html">Support</a>
+                <a href="https://discord.gg/THPR3BZc" target="_blank">Discord</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro animate__animated animate__fadeIn">
+            <h1>Willkommen bei der innovativen Spülmaschine mit Schleudergang</h1>
+            <p>Erleben Sie die revolutionäre Art des Geschirrspülens mit unserer neuen Spülmaschine, die den Schleudergang einer Waschmaschine integriert.</p>
+        </section>
+        <section class="features animate__animated animate__fadeInUp" id="vorstellung">
+            <h2>Hauptmerkmale</h2>
+            <div class="feature-container">
+                <ul>
+                    <li>
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Effizientes Trocknen</h3>
+                        <p>Dank des integrierten Schleudergangs trocknet das Geschirr blitzschnell und energiesparend.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-leaf"></i>
+                        <h3>Umweltfreundlich</h3>
+                        <p>Durch den geringeren Energie- und Wasserverbrauch schonen Sie nicht nur Ihre Ressourcen, sondern auch die Umwelt.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Benutzerfreundlich</h3>
+                        <p>Dank des intuitiven Bedienkonzepts ist unsere Spülmaschine für jeden Haushalt geeignet.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i>
+                        <h3>Vielseitige Programme</h3>
+                        <p>Egal ob Gläser, Töpfe oder Besteck - mit unseren verschiedenen Programmen wird alles perfekt sauber.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="statistics animate__animated animate__fadeInUp">
+            <h2>Statistiken</h2>
+            <div class="stat-container">
+                <div class="stat">
+                    <h3 id="satisfaction">Keine Angabe</h3>
+                    <p>Zufriedenheit</p>
+                    <div class="progress-bar">
+                        <div class="progress" id="satisfactionProgress" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <h3>80%</h3>
+                    <p>Weniger Energieverbrauch</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <h3>70%</h3>
+                    <p>Weniger Wasserverbrauch</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews animate__animated animate__fadeInUp">
+            <h2>Kundenbewertungen</h2>
+            <div class="review-container" id="kundenbewertungen"></div>
+            <div class="review-form-container">
+                <h2>Bewertung abgeben</h2>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="rating">Bewertung (1-10):</label>
+                    <div class="rating-slider">
+                        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+                        <span id="ratingValue">5</span>
+                    </div>
+
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+
+                    <button type="submit">Bewertung absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Innovative Spülmaschine. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

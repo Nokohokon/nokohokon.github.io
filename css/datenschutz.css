@@ -1,0 +1,28 @@
+/* Datenschutz */
+.datenschutz {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.datenschutz h1 {
+    margin-bottom: 1rem;
+}
+
+.datenschutz .content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.datenschutz h2 {
+    margin-bottom: 1rem;
+}
+
+.datenschutz h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}

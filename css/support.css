@@ -1,0 +1,83 @@
+/* Support */
+.support {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.support h1 {
+    margin-bottom: 1rem;
+}
+
+.support .content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support h2 {
+    margin-bottom: 1rem;
+}
+
+.support .support-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.support .option {
+    flex-basis: calc(33.33% - 1rem);
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.support .option i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.support .option h3 {
+    margin-bottom: 0.5rem;
+}
+
+.support .option p {
+    margin-bottom: 1rem;
+}
+
+.support .option .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.support .option .btn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .support .option {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .support .option {
+        flex-basis: 100%;
+    }
+}
